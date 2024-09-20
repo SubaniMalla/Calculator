@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,11 +49,11 @@ button.number,.operator {
 
 button.clear {
     font-size: 20px;
-    background-color: #f88;
+    background-color: rgb(255, 126, 126);
 }
 
 button.equals {
-    background-color: #88f;
+    background-color: rgb(235, 126, 133);
 }
 button.clear:hover,
 button.operator:hover,
