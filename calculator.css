@@ -4,21 +4,27 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-image:url('d241d1214f4245ab1024c86a0059e84d.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #main {
-    background-color: #a4a1a1;
+    background-color:rgba(255, 255, 255, 0.2);;
     border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.5px);
     padding: 20px;
-    border: 2px solid rgb(0, 0, 0);
+   
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .display {
-    background-color: #eee;
-    border: 2px solid rgb(0, 0, 0);
+    width: 300px;
+    background-color: #fffeef;
+    border: 2px solid #000000;
     border-radius: 10px;
     font-size: 40px;
     padding: 20px;
@@ -31,12 +37,12 @@ body {
 
 .container {
     display: flex;
-    gap: 10px;
     justify-content: space-between;
 }
 
 button {
-    border: 2px solid rgb(0, 0, 0);
+    width: 80px;
+    border: 2px solid rgb(25, 25, 25);
     font-size: 25px;
     padding: 20px;
     border-radius: 10px;
@@ -44,16 +50,18 @@ button {
 }
 
 button.number,.operator {
-    background-color: #fff;
+    background-color: #fffeef;
 }
 
 button.clear {
     font-size: 20px;
-    background-color: rgb(255, 126, 126);
+    color: #fffeef;
+    background-color: rgb(19, 43, 33);
 }
 
 button.equals {
-    background-color: rgb(235, 126, 133);
+    color:#fffeef;
+    background-color: rgb(19, 43, 33);
 }
 button.clear:hover,
 button.operator:hover,

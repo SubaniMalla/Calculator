@@ -68,7 +68,10 @@ function populateDisplay() {
         end = '';
         display.textContent='0';
     });
-
+    const point = document.querySelector(".point");
+    point.addEventListener("click", ()=>{
+        
+    })
 
 }
 
