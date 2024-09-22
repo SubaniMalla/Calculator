@@ -69,8 +69,42 @@ function populateDisplay() {
         display.textContent='0';
     });
     const point = document.querySelector(".point");
-    point.addEventListener("click", ()=>{
-        
+    point.addEventListener("click", (e)=>{
+        if(end==""){
+            num1 = '';
+            num2 = '';
+            op = '';
+            end += "0"+e.target.textContent;
+            display.textContent=end;
+        }
+        if(!end.includes(".")){
+            end += e.target.textContent;
+            display.textContent=end;
+        }
+       
+    })
+    const negative = document.querySelector(".negative");
+    negative.addEventListener("click",()=>{
+        if(end!==""){
+            end=end*-1;
+            display.textContent=end;
+        }
+        else{
+            num1=num1*-1;
+            display.textContent=num1;
+        }
+       
+    })
+    const del = document.querySelector(".delete");
+    del.addEventListener("click",()=>{
+        if(end!==""){
+            end=end.slice(0,-1);
+            display.textContent=end;
+        }
+        else{
+            num1=num1.slice(0,-1);
+            display.textContent=num1;
+        }
     })
 
 }
