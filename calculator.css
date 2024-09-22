@@ -36,6 +36,7 @@ body {
 }
 
 .container {
+    gap: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -49,27 +50,35 @@ button {
     cursor: pointer;
 }
 
-button.number,.operator {
+button.number,.operator,.point {
     background-color: #fffeef;
 }
 
-button.clear {
+button.clear,.delete {
     font-size: 20px;
     color: #fffeef;
     background-color: rgb(19, 43, 33);
 }
 
-button.equals {
+button.equals,.negative {
     color:#fffeef;
     background-color: rgb(19, 43, 33);
 }
-button.clear:hover,
+button.equals{
+    flex-grow: 1;
+}
+
 button.operator:hover,
-button.equals:hover,
+button.point:hover,
 button.number:hover {
     background-color: #bbb;
 }
-
+button.clear:hover,
+button.delete:hover,
+button.negative:hover,
+button.equals:hover{
+    background-color: rgb(40, 59, 51);
+}
 button:active {
     transform: scale(0.95);
 }
